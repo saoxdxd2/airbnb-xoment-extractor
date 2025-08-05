@@ -1,4 +1,4 @@
-name: Build macOS Executable
+name: Build Linux Executable
 
 on:
   workflow_dispatch:
@@ -6,8 +6,8 @@ on:
     branches: [main]
 
 jobs:
-  build-macos:
-    runs-on: macos-latest
+  build-linux:
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
@@ -33,5 +33,5 @@ jobs:
     - name: Upload executable
       uses: actions/upload-artifact@v4
       with:
-        name: macOS-app
+        name: linux-app
         path: dist/app

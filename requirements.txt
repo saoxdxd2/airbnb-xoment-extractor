@@ -1,0 +1,5 @@
+PyQt5
+playwright
+beautifulsoup4
+lxml
+nest_asyncio
